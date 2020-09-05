@@ -1,6 +1,6 @@
 # Digiexchange Team Invitational Writeup
 
-## Writeup
+## Writeup:
 
 With the first team invitational by Security Innovation coming to an end, we decided to detail our experiences in a writeup.  It was a challenging range, but our teamwork and persistence paid off and we conquered the range in 8 hours and 44 minutes to capture the gold.  Greetz to the team members participating: 5C4R48, ElleF, All3goria, sogonsec, FROSTEDMONOTONY, and Viking.  Final scores will be posted at the bottom
 
