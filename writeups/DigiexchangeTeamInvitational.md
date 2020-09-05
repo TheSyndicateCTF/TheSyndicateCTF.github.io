@@ -40,7 +40,7 @@ All in all this was a great event and we had a great time.  Keep up the good wor
 
 ## Final Scores (Top 5):
 
-![score image not found](https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/digiexchangescore.png)
+![score image not found](https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/digiexchangescorefinal.png)
 
 1. The Quaantined Syndicate (19860 pts)
 2. Exquisite Execution (19860 pts)
