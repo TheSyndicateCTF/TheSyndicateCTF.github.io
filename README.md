@@ -15,4 +15,4 @@ Welcome to our page.  We post our writeups, tools, etc here for others to benefi
 
 # Writeups
 
-[Digiexchange Team Invitational](../blob/gh-pages/writeups/DigiexchangeTeamInvitational.md)
+[Digiexchange Team Invitational](./writeups/DigiexchangeTeamInvitational.md)
