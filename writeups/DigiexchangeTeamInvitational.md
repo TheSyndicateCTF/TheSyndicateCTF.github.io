@@ -40,4 +40,4 @@ All in all this was a great event and we had a great time.  Keep up the good wor
 
 ## Final Scores (Top 5):
 
-![score image not found][digiexchangescore.png]
+![score image not found](https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/digiexchangescore.png)
