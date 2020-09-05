@@ -1,4 +1,4 @@
-![score image not found](https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/syndicate-wide.png)
+![Header Error](https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/syndicate-wide.png)
 
 # Welcome
 
@@ -15,4 +15,4 @@ Welcome to our page.  We post our writeups, tools, etc here for others to benefi
 
 # Writeups
 
-[Digiexchange Team Invitational](./writeups/DigiexchangeTeamInvitational.md)
+[Digiexchange Team Invitational](./writeups/DigiexchangeTeamInvitational.html)
