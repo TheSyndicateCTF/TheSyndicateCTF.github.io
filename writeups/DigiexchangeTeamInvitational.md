@@ -40,4 +40,4 @@ All in all this was a great event and we had a great time.  Keep up the good wor
 
 ## Final Scores (Top 5):
 
-![score image not found][imgs/digiexchangescore.png]
+![score image not found][digiexchangescore.png]
