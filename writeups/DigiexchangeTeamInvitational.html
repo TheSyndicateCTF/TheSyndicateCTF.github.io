@@ -1,0 +1,241 @@
+
+    <html>
+      <head>
+        <title>DigiexchangeTeamInvitational</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+        <div id='content'>
+    <h1 id="digiexchange-team-invitational-writeup">Digiexchange Team Invitational Writeup</h1>
+<h2 id="writeup">Writeup:</h2>
+<p>With the first team invitational by Security Innovation coming to an end, we decided to detail our experiences in a writeup.  It was a challenging range, but our teamwork and persistence paid off and we conquered the range in 8 hours and 44 minutes to capture the gold.  Greetz to the team members participating: 5C4R48, ElleF, All3goria, sogonsec, FROSTEDMONOTONY, and Viking.  Final scores will be posted at the bottom</p>
+<p>The rules were simple: </p>
+<ol>
+<li>No hints from SI staff</li>
+<li>Teams must consist of at least 2 members and no more than 6 members</li>
+<li>To compensate for larger teams, the score of each team member is averaged for the team score</li>
+<li>No prebuilt automated tools like knoxss, burp spider, sqlmap, etc</li>
+</ol>
+<p>Going into the event we knew communication and active participation were going to be key.  To coordinate effectively we set up a discord server with a voice channel for fast transfer of information and 2 text channels: Solutions and Work.  The solutions channel was only used for flags, scoring payloads, and writeups of the trickier challenges.  All speculative payloads, notes, and other ramblings during the event were contained to the work channel.</p>
+<p>Knowing the strengths of our team played a big role in our time.  5C4R48 is adept at binary exploitation so he was tasked with any binaries that we encountered.  Sogonsec was the strongest programmer on the team so he had priority on any scripting based challenges.  ElleF, All3goria, and FROSTEDMONOTONY were all web app specialists so they focused on the main application.  Viking is adept at crypto so he was tasked with the cryptography analysis.</p>
+<p>We were asked by Security innovation not to post any solutions so we will go over general methodologies that helped us instead:</p>
+<ol>
+<li>When beginning a web app, always check robots.txt /admin /administrator /debug and /administration.  You almost always will find something juicy.  For challenges that allow tools we recommend dirbuster/gobuster/wfuzz combined with a wordlist of sensitive pages.</li>
+<li>When you encounter a hash outside of a database, there are only a few variables it could be in any given situation.  Try hashing various combinations of variables related to where you found it to create a match.</li>
+<li>Sometimes XSS filters are almost perfect.  The keyword being almost.  We had instances where we tried over 30 different payloads against an input field without any feedback that would indicate XSS.  The 31st payload triggered an alert.</li>
+<li>Always read the source.  We found multiple challenges hidden in the source.  Some more subtle than others.</li>
+<li>Scripting skills are very useful.  Either build your own up or have a teammate that can quickly and effectively script.</li>
+<li>Remember to have fun.  It is a game.</li>
+</ol>
+<p>Now for the feedback section.  Security Innovation did a lot of things very well and could work on a few things as well.</p>
+<p>Pros:</p>
+<ol>
+<li>The team aspect.  The sizing of our team was perfect.  6 members allowed us to cover a lot of ground very quickly as well as have very different viewpoints on challenges.  This also kept things entertaining during the lull between scoring.</li>
+<li>There was a great variety of challenges ranging from very easy to enragingly fickle.</li>
+<li>A wide variety of challenge categories.  We enjoyed that challenges varied from XSS to SQLI to crypto to binary exploitation.  It allowed a diverse talent pool to really shine.</li>
+<li>The try harder mentality of this event really made it feel competitive.  The other events were very much a group hug style which, while still fun, is less exciting for some people.</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>The binary exploitation challenges could be ramped up in difficulty a bit.  The first few were mutations of each other without any added difficulty.</li>
+<li>A bit more varied SQLI challenges would be great.  The SQLI was a bit homogenous in this range.</li>
+</ol>
+<p>All in all this was a great event and we had a great time.  Keep up the good work Chad and the rest of SI and we will see you at the next one!</p>
+<h2 id="final-scores-top-5">Final Scores (Top 5):</h2>
+<p><img src="https://github.com/TheSyndicateCTF/TheSyndicateCTF.github.io/blob/gh-pages/writeups/imgs/digiexchangescorefinal.png" alt="score image not found" /></p>
+<ol>
+<li>The Quaantined Syndicate (19860 pts)</li>
+<li>Exquisite Execution (19860 pts)</li>
+<li>Pwndemonium (10860 pts)</li>
+<li>Haxors (10710 pts)</li>
+<li>OWASP Delaware (6166 pts)</li>
+</ol>
+
+        </div>
+        <style type='text/css'>body {
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  body > #content {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+body > #content {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none; }
+  a:visited {
+    color: #0366d6; }
+  a:hover {
+    color: #0366d6;
+    text-decoration: underline; }
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: .2em .4em;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #24292e; }
+
+ul {
+  margin-top: 0; }
+
+li {
+  color: #24292e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+li + li {
+  margin-top: 0.25em; }
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #24292e; }
+
+a:visited {
+  color: #0366d6; }
+
+h1, h2, h3 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */ }</style>
+      </body>
+    </html>
