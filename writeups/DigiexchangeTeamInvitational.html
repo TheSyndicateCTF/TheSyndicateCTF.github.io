@@ -3,6 +3,7 @@
       <head>
         <title>DigiexchangeTeamInvitational</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/TheSyndicateCTF/TheSyndicateCTF.github.io/gh-pages/favicon.ico">
       </head>
       <body>
         <div id='content'>
@@ -20,7 +21,7 @@
 <p>Knowing the strengths of our team played a big role in our time.  5C4R48 is adept at binary exploitation so he was tasked with any binaries that we encountered.  Sogonsec was the strongest programmer on the team so he had priority on any scripting based challenges.  ElleF, All3goria, and FROSTEDMONOTONY were all web app specialists so they focused on the main application.  Viking is adept at crypto so he was tasked with the cryptography analysis.</p>
 <p>We were asked by Security innovation not to post any solutions so we will go over general methodologies that helped us instead:</p>
 <ol>
-<li>When beginning a web app, always check robots.txt /admin /administrator /debug and /administration.  You almost always will find something juicy.  The cheat sheet SI provides with their ranges also mentions this.  For challenges that allow tools we recommend dirbuster/gobuster/wfuzz combined with a wordlist of sensitive pages.</li>
+<li>When beginning a web app, always check robots.txt /admin /administrator /debug and /administration.  You will almost always find something juicy.  The cheat sheet SI provides with their ranges also mentions this.  For challenges that allow tools we recommend dirbuster/gobuster/wfuzz combined with a wordlist of sensitive pages.</li>
 <li>When you encounter a hash outside of a database, there are only a few variables it could be in any given situation.  Try hashing various combinations of variables related to where you found it to create a match.</li>
 <li>Sometimes XSS filters are almost perfect.  The keyword being almost.  We had instances where we tried over 30 different payloads against an input field without any feedback that would indicate XSS.  The 31st payload triggered an alert.</li>
 <li>Always read the source.  We found multiple challenges hidden in the source.  Some more subtle than others.</li>
